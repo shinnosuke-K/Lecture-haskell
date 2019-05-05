@@ -6,7 +6,6 @@
 
 `main.hs` にコードを書いてください。<br><br>
 
-
 ## コマンド
 
 ``` make
@@ -28,6 +27,20 @@ make name=lecture1
 ```
 
 コマンドを打つと、空の`main.hs`ができるので、そちらにコードを引き続き書いていってください。
+
+他にも
+
+```make
+make run
+```
+
+なら、ファイルは作成されず、プログラムのみ実行されます。
+
+```make
+make create name=lecture1
+```
+
+これは、`main.hs`を`lecture1.hs`というファイル名に変更し、空の`main.hs`が作成されます。
 
 <br>
 
