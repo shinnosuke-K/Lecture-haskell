@@ -11,3 +11,9 @@ run:
 create:
 	@mv main.hs ${name}.hs
 	@touch main.hs
+
+build:
+	docker build --quiet=true -t 'lecture/haskell' .
+
+mount:
+	docker run --rm -v ${pwd}:/usr/src lecture/haskell runghc main.hs
